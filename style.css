@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+#header {
+  display: flex
+}
+
+#menuLeft {
+  display: flex;
+}
+
+#menuRight {
+  display: flex;
+}
+
+.menuItem {
+  display: flex;
+  margin: 0;
+}
+
+.flexLeft {}
+
+.flexRight {}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.normalText {
+  font-size: 14px;
+  color: #7d7e79;
+}
+
+.footerSubTitle {
+  margin: 10px 0;
+}
+
+/* for desktop */
+@media only screen and (min-width: 992px) {
+  #header {
+    padding: 20px 100px 15px 80px;
+    justify-content: space-between;
+  }
+
+  .menuItem {
+    padding: 10px;
+    color: #7d7e79;
+  }
+
+  #theme {
+    position: relative;
+  }
+
+  #themeText {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 5%;
+    color: white;
+  }
+
+  #title1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #subTitle1 {
+    font-size: 20px;
+  }
+
+  #title2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #subTitle2 {
+    margin-top: 15px;
+  }
+
+  #headerImage {
+    width: 100%;
+  }
+
+  #theme hr {
+    display: none;
+  }
+
+  #content {
+    padding: 40px 20px;
+    background-color: #e4e4e4;
+  }
+
+  #images {
+    display: flex;
+    background-color: #e4e4e4;
+    padding-bottom: 20px;
+  }
+
+  #images div {
+    width: calc(100% / 3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #images div img {
+    width: 100%;
+  }
+
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .footerItem {
+    width: calc(100% / 3);
+    padding: 20px;
+  }
+  .footerTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20;
+  }
+  .footerLink {}
+}
+
+/* for tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #header {
+    padding: 25px 10px 10px 10px;
+    background-color: #556370;
+    color: white;
+    justify-content: space-between;
+  }
+
+  .menuItem {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  #theme {
+    padding: 30px 15px 20px 15px;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #title1 {
+    margin-bottom: 20px;
+  }
+
+  #subTitle1 {
+    font-size: 14px;
+    color: #7d7e79;
+  }
+
+  #title2 {
+    margin-bottom: 10px;
+  }
+
+  #headerImage {
+    display: none;
+  }
+
+  #theme hr {
+    margin-top: 30px;
+    height: 1px;
+    border: none;
+    background-color: #b7b7b6;
+  }
+
+  #content {
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+
+  #images {
+    display: flex;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  #images div:first-child img:first-child {
+    margin-bottom: 30px;
+  } 
+
+  #images div {
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  #images div img {
+    width: 100%;
+  }
+  #footer {
+    padding: 0 15px;
+  }
+  .footerTitle {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .footerItem {
+    padding: 20px 0;
+  }
+}
+
+/* for mobile */
+@media only screen and (max-width: 767px) {
+  #header {
+    padding: 15px 5px;
+    background-color: #556370;
+    color: white;
+    justify-content: flex-start;
+  }
+
+  .menuItem {
+    padding: 12px;
+    font-size: 11px;
+  }
+
+  #theme {
+    padding: 30px 15px 30px 15px;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  #subTitle1 {
+    font-size: 12px;
+    color: #7d7e79;
+  }
+
+  .normalText {
+    font-size: 12px;
+  }
+
+  #headerImage {
+    display: none;
+  }
+
+  #theme hr {
+    display: none;
+  }
+
+  #content {
+    padding: 15px;
+  }
+  #images {
+    display: flex;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  #images div:first-child img:first-child, #images div:nth-child(2) img:first-child {
+    margin-bottom: 30px;
+  } 
+
+  #images div {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  #images div img {
+    width: 100%;
+  }
+  #footer {
+    padding: 0 15px;
+  }
+  .footerTitle {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .footerItem {
+    padding: 20px 0;
+  }
+  .footerLink {
+    color: black;
+  }
+}
